@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Khushi's gallery</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .wrap{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 90%;
+            justify-content: center;
+        }
+        .background-svg{
+            max-width: 35%;
+        }
+        .flip-card-back p{
+            margin-top: 10%;
+            padding:0 10px 0px 10px ;
+        }
+        .card-one{
+            background-color: #F2DEBB;
+        }
+        .card-two{
+            background-color: rgb(231, 220, 204); 
+        }
+
+        .card-three{
+            background-color:rgb(255, 212, 157)
+        }
+
+        .card-four{
+            background-color:rgb(231, 226, 210)
+        }
+        
+        .card-five{
+            background:#F1EDE0;
+        }
+        .card-six{
+            background-color: #DED2BB;
+        }
+
+        .main-head-text{
+            text-align: center;
+            font-size: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 27 hemant satna  -->
+    <h2 class="main-head-text">This is Khushi's photo gallery</h2>
+    <div class="wrap">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/1.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back card-one">
+                    <p>Her smile, a radiant masterpiece, illuminates the world with joy. Each grin paints life's canvas with warmth, reflecting resilience and beauty. A beacon of light, her laughter is timeless magic.</p>
+                    <img class="background-svg" src="images/svg's/1.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/2.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back card-two">
+                    <p>Caught in the reflective dance of self-expression, she, a modern muse, captures moments in the looking glass. The mirror frames her confidence, a snapshot of authenticity frozen in pixels.</p>
+                    <img class="background-svg" src="images/svg's/2.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/3.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back card-three">
+                    <p>She stands under a fancy chandelier (Jhoomar), looking elegant. The crystal light adds a glow, making her surroundings as classy as she is. It's like a moment frozen in time, capturing her beauty.</p>
+                    <img class="background-svg" src="images/svg's/3.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/4.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back card-four">
+                    <p>She looks stunning in Indian traditional wear, embracing vibrant colors and intricate designs. Her outfit reflects the beauty of heritage, making her a modern symbol of timeless elegance.</p>
+                    <img class="background-svg" src="images/svg's/4.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/5.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back card-five">
+                    <p>Her face lights up with a wide smile, her eyes sparkling with joy. In that moment, her infectious happiness and the gleam in her big eyes create a picture-perfect expression of pure delight.</p>
+                    <img class="background-svg" src="images/svg's/5.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/6.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back card-six">
+                    <p>In her teenage photo, she radiates youthful energy. With a mix of innocence and growing confidence, her smile reflects the vibrant spirit of adolescence and the beginning of a dynamic journey.</p>
+                    <img class="background-svg" src="images/svg's/6.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
